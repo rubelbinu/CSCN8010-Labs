@@ -15427,8 +15427,8 @@ target  0.430453  0.565883  0.382483  1.000000
 <span class="c1"># Print Models</span>
 
 <span class="k">for</span> <span class="n">degree</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Degree: </span><span class="si">{</span><span class="n">degrees</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Model: </span><span class="si">{</span><span class="n">models</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Degree: </span><span class="si">{</span><span class="n">degree</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Model: </span><span class="si">{</span><span class="n">model</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15448,59 +15448,29 @@ target  0.430453  0.565883  0.382483  1.000000
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Degree: [0, 1, 2, 3, 4, 5]
-Model: {0: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
-                (&#39;linear&#39;, LinearRegression())]), 1: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
-                (&#39;linear&#39;, LinearRegression())]), 2: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
-                (&#39;linear&#39;, LinearRegression())]), 3: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
-                (&#39;linear&#39;, LinearRegression())]), 4: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
-                (&#39;linear&#39;, LinearRegression())]), 5: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
-                (&#39;linear&#39;, LinearRegression())])}
+<pre>Degree: 0
+Model: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
+                (&#39;linear&#39;, LinearRegression())])
 
-Degree: [0, 1, 2, 3, 4, 5]
-Model: {0: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
-                (&#39;linear&#39;, LinearRegression())]), 1: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
-                (&#39;linear&#39;, LinearRegression())]), 2: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
-                (&#39;linear&#39;, LinearRegression())]), 3: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
-                (&#39;linear&#39;, LinearRegression())]), 4: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
-                (&#39;linear&#39;, LinearRegression())]), 5: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
-                (&#39;linear&#39;, LinearRegression())])}
+Degree: 1
+Model: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
+                (&#39;linear&#39;, LinearRegression())])
 
-Degree: [0, 1, 2, 3, 4, 5]
-Model: {0: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
-                (&#39;linear&#39;, LinearRegression())]), 1: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
-                (&#39;linear&#39;, LinearRegression())]), 2: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
-                (&#39;linear&#39;, LinearRegression())]), 3: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
-                (&#39;linear&#39;, LinearRegression())]), 4: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
-                (&#39;linear&#39;, LinearRegression())]), 5: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
-                (&#39;linear&#39;, LinearRegression())])}
+Degree: 2
+Model: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
+                (&#39;linear&#39;, LinearRegression())])
 
-Degree: [0, 1, 2, 3, 4, 5]
-Model: {0: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
-                (&#39;linear&#39;, LinearRegression())]), 1: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
-                (&#39;linear&#39;, LinearRegression())]), 2: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
-                (&#39;linear&#39;, LinearRegression())]), 3: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
-                (&#39;linear&#39;, LinearRegression())]), 4: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
-                (&#39;linear&#39;, LinearRegression())]), 5: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
-                (&#39;linear&#39;, LinearRegression())])}
+Degree: 3
+Model: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
+                (&#39;linear&#39;, LinearRegression())])
 
-Degree: [0, 1, 2, 3, 4, 5]
-Model: {0: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
-                (&#39;linear&#39;, LinearRegression())]), 1: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
-                (&#39;linear&#39;, LinearRegression())]), 2: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
-                (&#39;linear&#39;, LinearRegression())]), 3: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
-                (&#39;linear&#39;, LinearRegression())]), 4: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
-                (&#39;linear&#39;, LinearRegression())]), 5: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
-                (&#39;linear&#39;, LinearRegression())])}
+Degree: 4
+Model: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
+                (&#39;linear&#39;, LinearRegression())])
 
-Degree: [0, 1, 2, 3, 4, 5]
-Model: {0: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=0)),
-                (&#39;linear&#39;, LinearRegression())]), 1: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=1)),
-                (&#39;linear&#39;, LinearRegression())]), 2: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures()),
-                (&#39;linear&#39;, LinearRegression())]), 3: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=3)),
-                (&#39;linear&#39;, LinearRegression())]), 4: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=4)),
-                (&#39;linear&#39;, LinearRegression())]), 5: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
-                (&#39;linear&#39;, LinearRegression())])}
+Degree: 5
+Model: Pipeline(steps=[(&#39;polynomial&#39;, PolynomialFeatures(degree=5)),
+                (&#39;linear&#39;, LinearRegression())])
 
 </pre>
 </div>
