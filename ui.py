@@ -51,7 +51,6 @@ def main():
     if st.button('Predict'):
         prediction = model.predict(input_data)
 
-        print(prediction)
         if prediction[0] == 1:
             st.error('Risk of Heart Disease Detected')
         else:
